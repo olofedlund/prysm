@@ -175,7 +175,6 @@ func ProcessAttestationNoVerifySignature(
 		InclusionDelay:  beaconState.Slot() - s,
 		ProposerIndex:   proposerIndex,
 	}
-
 	var ffgSourceEpoch uint64
 	var ffgSourceRoot []byte
 	var ffgTargetEpoch uint64

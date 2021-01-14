@@ -27,7 +27,6 @@ func ProcessAttestations(
 
 	v := &Validator{}
 	var err error
-
 	for _, a := range append(state.PreviousEpochAttestations(), state.CurrentEpochAttestations()...) {
 		if a.InclusionDelay == 0 {
 			return nil, nil, errors.New("attestation with inclusion delay of 0")
